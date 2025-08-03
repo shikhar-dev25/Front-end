@@ -11,10 +11,44 @@
     rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex justify-center items-center bg-[#212121]">
+    <form class="flex flex-col items-center gap-4 w-full max-w-[300px] border-[#58bc82] rounded-xl border-4 px-10 py-4">
+  <span class="flex flex-col gap-2 w-full">
+    <label for="email" class="self-start text-[#58bc82] font-semibold">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="rounded-lg px-3 py-4 w-full border-none outline outline-2 outline-[#707070] focus:outline-[#58bc82] bg-[#9c9c9c60]"
+    />
+  </span>
 
+  <span class="flex flex-col gap-2 w-full">
+    <label for="password" class="self-start text-[#58bc82] font-semibold">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="rounded-lg px-3 py-4 w-full border-none outline outline-2 outline-[#707070] focus:outline-[#58bc82] bg-[#9c9c9c60]"
+    />
+  </span>
 
+  <span class="text-[#707070] text-sm">
+    <a href="#" class="text-[#58bc82] hover:underline">Forgot password?</a>
+  </span>
+
+  <input
+    type="submit"
+    value="Log in"
+    class="px-3 py-4 w-full flex items-center justify-center gap-2 rounded-full bg-[#707070] text-[#efefef] font-semibold text-sm cursor-pointer transition-all duration-300 hover:bg-[#58bc82] hover:text-[#707070]"
+  />
+
+  <span class="text-[#707070] text-sm">
+    Don't have an account? <a href="#" class="text-[#58bc82] hover:underline">Sign up</a>
+  </span>
+</form>
     <script src="script.js"></script>
 </body>
 </html>
